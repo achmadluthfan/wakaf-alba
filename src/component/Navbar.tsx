@@ -12,11 +12,11 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={` overflow-y-hidden flex duration-[400ms]  origin-top relative z-20 justify-between p-2 md:items-center ${
+        className={`fixed overflow-y-hidden flex w-full duration-[400ms] bg-[#fff] shadow-md origin-top md:bg-transparent z-50 justify-between p-2 md:items-center scroll-smooth ${
           isOpen ? "h-[310px]" : "h-[70px] "
         }`}
       >
-        <div className="bg-white h-fit mt-1 ml-1">
+        <div className=" h-fit mt-1 ml-1">
           <Image src={logo_alba} alt="logo_alba" height={45}></Image>
         </div>
         <div
@@ -33,7 +33,7 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li className="text-black">
-              <Link href="/about">Tentang Kami</Link>
+              <Link href="/tentang-kami">Tentang Kami</Link>
             </li>
             <li className="text-black">
               <Link href="/berita">Berita</Link>
